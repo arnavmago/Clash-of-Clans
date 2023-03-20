@@ -3,8 +3,8 @@ from os import system
 import math
 from src.king import king
 from src.barbarians import Barbarians
-from src.barbarians1 import Barbarians1
-from src.barbarians2 import Barbarians2
+# from src.barbarians1 import Barbarians1
+# from src.barbarians2 import Barbarians2
 from src.hut import hut
 from src.cannon import cannon
 import os
@@ -14,7 +14,7 @@ class Village:
     def __init__(self):
         self.columns = 200
         self.rows = 45
-        self.use=str(len(os.listdir("replays")) + 1)
+        self.use = str(len(os.listdir("replays")) + 1)
 
         self.townhall_xcor = int(self.rows / 2)
         self.townhall_ycor = int(self.columns / 2)
@@ -38,7 +38,7 @@ class Village:
         # self.huts_xcor5 = 20
         # self.huts_xcor6 = 24
 
-        # self.huts_ycor = 120
+        self.huts_ycor = 120
 
         # self.hut_maxlife = 20
         # self.hut1_life = 20
@@ -68,16 +68,16 @@ class Village:
         self.huts_arr = []
 
         for i in range(6):
-            h = hut((i+1)*4,120,20,self.huts)
+            h = hut((i+1)*4, 120, 20, self.huts)
             self.huts_arr.append(h)
-        
+
         self.cannons_arr = []
-        cannon1 = cannon(30,50,1,3)
-        cannon2 = cannon(30,180,1,3)
+        cannon1 = cannon(30, 50, 1, 3)
+        cannon2 = cannon(30, 180, 1, 3)
 
         self.cannons_arr.append(cannon1)
         self.cannons_arr.append(cannon2)
-        
+
         #############################################################
 
         self.wall1_col = []
@@ -101,8 +101,8 @@ class Village:
         self.king_damage = 4
         self.king = king(self.king_xcor, self.king_ycor)
         self.barbarians = Barbarians()
-        self.barbarians1 = Barbarians1()
-        self.barbarians2 = Barbarians2()
+        self.barbarians1 = Barbarians()
+        self.barbarians2 = Barbarians()
 
         self.win = 0
 
@@ -120,10 +120,8 @@ class Village:
                     self.townhall_ycor + j
                 ] = self.townhall
 
-
         # self.ground[self.cx1][self.cy1] = self.cannon
         # self.ground[self.cx2][self.cy2] = self.cannon
-
 
         #############################################################
 
@@ -158,14 +156,12 @@ class Village:
         #             self.ground[self.huts_xcor6 + i][
         #                 self.huts_ycor + j
         #             ] = self.hut6_color
-        
+
         #############################################################
 
         for h in self.huts_arr:
-            if(h.xcor != -100):
+            if (h.xcor != -100):
                 self.ground[h.xcor][h.ycor] = h.color
-                print(h.xcor,end=" ")
-                print(h.ycor)
 
         #############################################################
 
@@ -197,13 +193,9 @@ class Village:
         if self.barbarians.count_bar >= 1:
             self.ground[self.barbarians.bar1_x][self.barbarians.bar1_y] = self.townhall
         if self.barbarians1.count_bar >= 1:
-            self.ground[self.barbarians1.bar1_x][
-                self.barbarians1.bar1_y
-            ] = self.townhall
+            self.ground[self.barbarians1.bar1_x][self.barbarians1.bar1_y] = self.townhall
         if self.barbarians2.count_bar >= 1:
-            self.ground[self.barbarians2.bar1_x][
-                self.barbarians2.bar1_y
-            ] = self.townhall
+            self.ground[self.barbarians2.bar1_x][self.barbarians2.bar1_y] = self.townhall
 
         # game endings
         count = 1
@@ -228,7 +220,7 @@ class Village:
         #############################################################
 
         for h in self.huts_arr:
-            if(h.xcor != -100):
+            if (h.xcor != -100):
                 count = 0
 
         #############################################################
@@ -242,7 +234,7 @@ class Village:
         #     self.king_ycor - self.cy2
         # ) ** 2 < self.crange**2:
         #     self.kingh -= self.cdamage
-        
+
         #############################################################
 
         for c in self.cannons_arr:
@@ -253,9 +245,9 @@ class Village:
 
         title = "Health Bar"
         for j in range(0, len(title)):
-            self.ground[40][20+ j] = (
+            self.ground[40][20 + j] = (
                 Back.LIGHTBLUE_EX + Fore.WHITE + title[j] + Style.RESET_ALL)
-        
+
         for i in range(self.kingh):
             self.ground[41][14 + i] = self.spawning
 
@@ -267,11 +259,9 @@ class Village:
             self.win = 0
             self.ongoing = 0
 
-        self.output="\n".join(["".join(row) for row in self.ground])
+        self.output = "\n".join(["".join(row) for row in self.ground])
         print(self.output)
-     
 
-       
         repfile = "replays/replay" + self.use + ".txt"
         with open(repfile, "a+") as file:
             for i in self.output:
@@ -279,6 +269,3 @@ class Village:
                     file.write(j)
             file.write("\n")
             file.write("format\n")
-
-
-        

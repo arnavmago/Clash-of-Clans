@@ -3,7 +3,13 @@ from src.input_ import get_input
 from os import system
 import src.Ground
 
+
 class Barbarians():
+
+    z = 1
+    c = 1
+    x = 1
+
     def __init__(self):
         self.gree = Back.GREEN + ' ' + Style.RESET_ALL
         self.yell = Back.YELLOW + ' ' + Style.RESET_ALL
@@ -14,38 +20,50 @@ class Barbarians():
         self.bar1_y = 120
 
         self.count_bar = 0
-        self.start=-1
-        self.wait1=0
-        self.wait2=0
+        self.start = -1
+        self.wait1 = 0
+        self.wait2 = 0
         self.check = 0
+
     def inc(self):
         inp = get_input()
-        if(inp == 'z'):
-            self.count_bar = self.count_bar + 1
-            self.start=0
 
+        if (inp == 'z' and Barbarians.z == 1 and self.start == -1):
+            self.count_bar = 1
+            self.start = 0
+            Barbarians.z = 0
 
-    def barbarian_moment(self,ground):
+        if (inp == 'x' and Barbarians.x == 1 and self.start == -1):
+            self.count_bar = 1
+            self.start = 0
+            Barbarians.x = 0
+
+        if (inp == 'c' and Barbarians.c == 1 and self.start == -1):
+            self.count_bar = 1
+            self.start = 0
+            Barbarians.c = 0
+
+    def barbarian_moment(self, ground):
         for i in range(0, self.count_bar):
-            if(i == 0):
-                if(self.wait1==0):
+            if (i == 0):
+                if (self.wait1 == 0):
                     self.bar1_x = self.bar1_x + 1
                     #############################################################
 
                     for h in ground.huts_arr:
-                        if(h.xcor != -100 and self.bar1_x == h.xcor):
-                            if(h.color == self.gree):
+                        if (h.xcor != -100 and self.bar1_x == h.xcor):
+                            if (h.color == self.gree):
                                 self.bar1_x -= 1
                                 h.color = self.yell
-                            elif(h.color == self.yell):
+                            elif (h.color == self.yell):
                                 self.bar1_x -= 1
                                 h.color = self.rd
-                            elif(h.color == self.rd):
+                            elif (h.color == self.rd):
                                 self.bar1_x -= 1
                                 h.color = self.blak
                                 h.xcor = -100
                             break
-                    
+
                     #############################################################
                     # if(ground.huts_xcor1 != -100 and self.bar1_x == ground.huts_xcor1):
                     #     if(ground.hut1_color == self.gree):
@@ -126,36 +144,36 @@ class Barbarians():
                     #         ground.hut6_color = self.blak
                     #         ground.huts_xcor6 = -100
 
-                if(self.bar1_x >= 24):
+                if (self.bar1_x >= 24):
                     self.check = 1
-                if(self.check == 1):
+                if (self.check == 1):
                     self.bar1_y = self.bar1_y - 2
-                    if(self.bar1_y == 100): # 18,100
+                    if (self.bar1_y == 100):  # 18,100
                         self.bar1_y = self.bar1_y + 2
                         self.bar1_x = self.bar1_x - 2
-                        if(self.bar1_x ==ground.townhall_xcor+5 or self.bar1_x == ground.townhall_xcor+7):
-                            if self.bar1_y in range(ground.townhall_ycor-4,ground.townhall_ycor+5):
-                                ground.wall1_col[-ground.townhall_ycor+4+self.bar1_y]=self.blak
+                        if (self.bar1_x == ground.townhall_xcor+5 or self.bar1_x == ground.townhall_xcor+7):
+                            if self.bar1_y in range(ground.townhall_ycor-4, ground.townhall_ycor+5):
+                                ground.wall1_col[-ground.townhall_ycor +
+                                                 4+self.bar1_y] = self.blak
                                 self.bar1_x = self.bar1_x - 1
-                        if(self.bar1_x==ground.townhall_xcor+4):
-                            if(self.bar1_y in range(ground.townhall_ycor,ground.townhall_ycor+3)):
-                                if(ground.townhall==self.gree):
-                                    ground.townhall=self.yell
+                        if (self.bar1_x == ground.townhall_xcor+4):
+                            if (self.bar1_y in range(ground.townhall_ycor, ground.townhall_ycor+3)):
+                                if (ground.townhall == self.gree):
+                                    ground.townhall = self.yell
                                     self.bar1_x = self.bar1_x + 1
                                     continue
-                              
-                            elif(ground.townhall==self.yell):
-                                ground.townhall=self.rd
-                                self.bar1_x = self.bar1_x + 1
-                                
-                                continue
 
-                            elif(ground.townhall==self.rd):
-                                ground.townhall=self.blak 
-                                self.bar1_x = self.bar1_x + 1
-                                continue 
+                                elif (ground.townhall == self.yell):
+                                    ground.townhall = self.rd
+                                    self.bar1_x = self.bar1_x + 1
+                                    continue
 
-                            elif(ground.townhall==self.blak):
-                                self.bar1_x = self.bar1_x + 1
-                                ground.townhall_xcor = -100
-                                continue 
+                                elif (ground.townhall == self.rd):
+                                    ground.townhall = self.blak
+                                    self.bar1_x = self.bar1_x + 1
+                                    continue
+
+                                elif (ground.townhall == self.blak):
+                                    self.bar1_x = self.bar1_x + 1
+                                    ground.townhall_xcor = -100
+                                    continue

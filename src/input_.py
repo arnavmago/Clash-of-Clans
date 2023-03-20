@@ -1,9 +1,11 @@
 import signal
 
+
 class getch:
     def __init__(self):
         import tty
         import sys
+
     def __call__(self):
         import sys
         import tty
@@ -17,13 +19,16 @@ class getch:
             termios.tcsetattr(fileDescriptor, termios.TCSADRAIN, old_settings)
         return ch
 
+
 class PingException(Exception):
     pass
+
 
 def handle_ping(signum, frame):
     raise PingException
 
-def get_input(timeout=0.09):
+
+def get_input(timeout=0.6):
     signal.signal(signal.SIGALRM, handle_ping)
     signal.setitimer(signal.ITIMER_REAL, timeout)
     try:
