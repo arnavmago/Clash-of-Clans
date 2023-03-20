@@ -23,18 +23,18 @@ class king():
         if(direction == 'w'):  
             ground.king_xcor = ground.king_xcor-1
             if(ground.king_ycor == ground.huts_ycor):
-                if(ground.king_xcor == ground.huts_xcor1):
-                    ground.king_xcor = ground.king_xcor + 1
-                elif(ground.king_xcor == ground.huts_xcor2):
-                    ground.king_xcor = ground.king_xcor + 1
-                elif(ground.king_xcor == ground.huts_xcor3):
-                    ground.king_xcor = ground.king_xcor + 1
-                elif(ground.king_xcor == ground.huts_xcor4):
-                    ground.king_xcor = ground.king_xcor + 1
-                elif(ground.king_xcor == ground.huts_xcor5):
-                    ground.king_xcor = ground.king_xcor + 1
-                elif(ground.king_xcor == ground.huts_xcor6):
-                    ground.king_xcor = ground.king_xcor + 1
+                # if(ground.king_xcor == ground.huts_xcor1):
+                #     ground.king_xcor = ground.king_xcor + 1
+                # elif(ground.king_xcor == ground.huts_xcor2):
+                #     ground.king_xcor = ground.king_xcor + 1
+                # elif(ground.king_xcor == ground.huts_xcor3):
+                #     ground.king_xcor = ground.king_xcor + 1
+                # elif(ground.king_xcor == ground.huts_xcor4):
+                #     ground.king_xcor = ground.king_xcor + 1
+                # elif(ground.king_xcor == ground.huts_xcor5):
+                #     ground.king_xcor = ground.king_xcor + 1
+                # elif(ground.king_xcor == ground.huts_xcor6):
+                #     ground.king_xcor = ground.king_xcor + 1
                 
                 #############################################################
 
@@ -48,18 +48,18 @@ class king():
         elif(direction == 'a'):
             ground.king_ycor = ground.king_ycor - 1
             if(ground.king_ycor == ground.huts_ycor):
-                if(ground.king_xcor == ground.huts_xcor1):
-                    ground.king_ycor = ground.king_ycor + 1
-                elif(ground.king_xcor == ground.huts_xcor2):
-                    ground.king_ycor = ground.king_ycor + 1
-                elif(ground.king_xcor == ground.huts_xcor3):
-                    ground.king_ycor = ground.king_ycor + 1
-                elif(ground.king_xcor == ground.huts_xcor4):
-                    ground.king_ycor = ground.king_ycor + 1
-                elif(ground.king_xcor == ground.huts_xcor5):
-                    ground.king_ycor = ground.king_ycor + 1
-                elif(ground.king_xcor == ground.huts_xcor6):
-                    ground.king_ycor = ground.king_ycor + 1
+                # if(ground.king_xcor == ground.huts_xcor1):
+                #     ground.king_ycor = ground.king_ycor + 1
+                # elif(ground.king_xcor == ground.huts_xcor2):
+                #     ground.king_ycor = ground.king_ycor + 1
+                # elif(ground.king_xcor == ground.huts_xcor3):
+                #     ground.king_ycor = ground.king_ycor + 1
+                # elif(ground.king_xcor == ground.huts_xcor4):
+                #     ground.king_ycor = ground.king_ycor + 1
+                # elif(ground.king_xcor == ground.huts_xcor5):
+                #     ground.king_ycor = ground.king_ycor + 1
+                # elif(ground.king_xcor == ground.huts_xcor6):
+                #     ground.king_ycor = ground.king_ycor + 1
                 
                 #############################################################
 
@@ -73,18 +73,18 @@ class king():
         elif(direction == 's'):
             ground.king_xcor = 1 + ground.king_xcor
             if(ground.king_ycor == ground.huts_ycor):
-                if(ground.king_xcor == ground.huts_xcor1):
-                    ground.king_xcor = ground.king_xcor - 1
-                elif(ground.king_xcor == ground.huts_xcor2):
-                    ground.king_xcor = ground.king_xcor - 1
-                elif(ground.king_xcor == ground.huts_xcor3):
-                    ground.king_xcor = ground.king_xcor - 1
-                elif(ground.king_xcor == ground.huts_xcor4):
-                    ground.king_xcor = ground.king_xcor - 1
-                elif(ground.king_xcor == ground.huts_xcor5):
-                    ground.king_xcor = ground.king_xcor - 1
-                elif(ground.king_xcor == ground.huts_xcor6):
-                    ground.king_xcor = ground.king_xcor - 1 
+                # if(ground.king_xcor == ground.huts_xcor1):
+                #     ground.king_xcor = ground.king_xcor - 1
+                # elif(ground.king_xcor == ground.huts_xcor2):
+                #     ground.king_xcor = ground.king_xcor - 1
+                # elif(ground.king_xcor == ground.huts_xcor3):
+                #     ground.king_xcor = ground.king_xcor - 1
+                # elif(ground.king_xcor == ground.huts_xcor4):
+                #     ground.king_xcor = ground.king_xcor - 1
+                # elif(ground.king_xcor == ground.huts_xcor5):
+                #     ground.king_xcor = ground.king_xcor - 1
+                # elif(ground.king_xcor == ground.huts_xcor6):
+                #     ground.king_xcor = ground.king_xcor - 1 
                 
                 #############################################################
 
@@ -98,18 +98,18 @@ class king():
         elif(direction == 'd'): 
             ground.king_ycor = 1 + ground.king_ycor
             if(ground.king_ycor == ground.huts_ycor):
-                if(ground.king_xcor == ground.huts_xcor1):
-                    ground.king_ycor = ground.king_ycor - 1
-                elif(ground.king_xcor == ground.huts_xcor2):
-                    ground.king_ycor = ground.king_ycor - 1
-                elif(ground.king_xcor == ground.huts_xcor3):
-                    ground.king_ycor = ground.king_ycor - 1
-                elif(ground.king_xcor == ground.huts_xcor4):
-                    ground.king_ycor = ground.king_ycor - 1
-                elif(ground.king_xcor == ground.huts_xcor5):
-                    ground.king_ycor = ground.king_ycor - 1
-                elif(ground.king_xcor == ground.huts_xcor6):
-                    ground.king_ycor = ground.king_ycor - 1   
+                # if(ground.king_xcor == ground.huts_xcor1):
+                #     ground.king_ycor = ground.king_ycor - 1
+                # elif(ground.king_xcor == ground.huts_xcor2):
+                #     ground.king_ycor = ground.king_ycor - 1
+                # elif(ground.king_xcor == ground.huts_xcor3):
+                #     ground.king_ycor = ground.king_ycor - 1
+                # elif(ground.king_xcor == ground.huts_xcor4):
+                #     ground.king_ycor = ground.king_ycor - 1
+                # elif(ground.king_xcor == ground.huts_xcor5):
+                #     ground.king_ycor = ground.king_ycor - 1
+                # elif(ground.king_xcor == ground.huts_xcor6):
+                #     ground.king_ycor = ground.king_ycor - 1   
 
                 #############################################################
 
@@ -180,84 +180,84 @@ class king():
                         break
                 
                 #############################################################
-                if(ground.king_xcor == ground.huts_xcor1 + 1 or ground.king_xcor == ground.huts_xcor1 - 1):
-                    if(ground.king_life >= ground.hut1_life):
-                        ground.hut1_life = ground.hut1_life - ground.king_damage
-                        if(ground.hut1_life >= 10 and ground.hut1_life <= 20):
-                            ground.hut1_color = self.gree
-                        elif(ground.hut1_life >= 4 and ground.hut1_life <= 10):
-                            ground.hut1_color = self.yell
-                        elif(ground.hut1_life >= 0 and ground.hut1_life <= 4):
-                            ground.hut1_color = self.rd
-                        else: 
-                            ground.king_xcor = ground.huts_xcor1
-                            ground.hut1_color = self.blak
-                            ground.huts_xcor1 = -100
-                elif(ground.king_xcor == ground.huts_xcor2 + 1 or ground.king_xcor == ground.huts_xcor2 - 1):
-                    if(ground.king_life >= ground.hut2_life):
-                        ground.hut2_life = ground.hut2_life - ground.king_damage
-                        if(ground.hut2_life >= 10 and ground.hut2_life <= 20):
-                            ground.hut2_color = self.gree
-                        elif(ground.hut2_life >= 4 and ground.hut2_life <= 10):
-                            ground.hut2_color = self.yell
-                        elif(ground.hut2_life >= 0 and ground.hut2_life <= 4):
-                            ground.hut2_color = self.rd
-                        else:
-                            ground.king_xcor = ground.huts_xcor2
-                            ground.hut2_color = self.blak
-                            ground.huts_xcor2 = -100
-                elif(ground.king_xcor == ground.huts_xcor3 + 1 or ground.king_xcor == ground.huts_xcor3 - 1):
-                    if(ground.king_life >= ground.hut3_life):
-                        ground.hut3_life = ground.hut3_life - ground.king_damage
-                        if(ground.hut3_life >= 10 and ground.hut3_life <= 20):
-                            ground.hut3_color = self.gree
-                        elif(ground.hut3_life >= 4 and ground.hut3_life <= 10):
-                            ground.hut3_color = self.yell
-                        elif(ground.hut3_life >= 0 and ground.hut3_life <= 4):
-                            ground.hut3_color = self.rd
-                        else:
-                            ground.king_xcor = ground.huts_xcor3
-                            ground.hut3_color = self.blak
-                            ground.huts_xcor3 = -100
-                elif(ground.king_xcor == ground.huts_xcor4 + 1 or ground.king_xcor == ground.huts_xcor4 - 1):
-                    if(ground.king_life >= ground.hut4_life):
-                        ground.hut4_life = ground.hut4_life - ground.king_damage
-                        if(ground.hut4_life >= 10 and ground.hut4_life <= 20):
-                            ground.hut4_color = self.gree
-                        elif(ground.hut4_life >= 4 and ground.hut4_life <= 10):
-                            ground.hut4_color = self.yell
-                        elif(ground.hut4_life >= 0 and ground.hut4_life <= 4):
-                            ground.hut4_color = self.rd
-                        else:
-                            ground.king_xcor = ground.huts_xcor4
-                            ground.hut4_color = self.blak
-                            ground.huts_xcor4 = -100
-                elif(ground.king_xcor == ground.huts_xcor5 + 1 or ground.king_xcor == ground.huts_xcor5 - 1):
-                    if(ground.king_life >= ground.hut5_life):
-                        ground.hut5_life = ground.hut5_life - ground.king_damage
-                        if(ground.hut5_life >= 10 and ground.hut5_life <= 20):
-                            ground.hut5_color = self.gree
-                        elif(ground.hut5_life >= 4 and ground.hut5_life <= 10):
-                            ground.hut5_color = self.yell
-                        elif(ground.hut5_life >= 0 and ground.hut5_life <= 4):
-                            ground.hut5_color = self.rd
-                        else:
-                            ground.king_xcor = ground.huts_xcor5
-                            ground.hut5_color = self.blak
-                            ground.huts_xcor5 = -100
-                elif(ground.king_xcor == ground.huts_xcor6 + 1 or ground.king_xcor == ground.huts_xcor6 - 1):
-                    if(ground.king_life >= ground.hut6_life):
-                        ground.hut6_life = ground.hut6_life - ground.king_damage
-                        if(ground.hut6_life >= 10 and ground.hut6_life <= 20):
-                            ground.hut6_color = self.gree
-                        elif(ground.hut6_life >= 4 and ground.hut6_life <= 10):
-                            ground.hut6_color = self.yell
-                        elif(ground.hut6_life >= 0 and ground.hut6_life <= 4):
-                            ground.hut6_color = self.rd
-                        else:
-                            ground.king_xcor = ground.huts_xcor6
-                            ground.hut6_color = self.blak
-                            ground.huts_xcor6 = -100
+                # if(ground.king_xcor == ground.huts_xcor1 + 1 or ground.king_xcor == ground.huts_xcor1 - 1):
+                #     if(ground.king_life >= ground.hut1_life):
+                #         ground.hut1_life = ground.hut1_life - ground.king_damage
+                #         if(ground.hut1_life >= 10 and ground.hut1_life <= 20):
+                #             ground.hut1_color = self.gree
+                #         elif(ground.hut1_life >= 4 and ground.hut1_life <= 10):
+                #             ground.hut1_color = self.yell
+                #         elif(ground.hut1_life >= 0 and ground.hut1_life <= 4):
+                #             ground.hut1_color = self.rd
+                #         else: 
+                #             ground.king_xcor = ground.huts_xcor1
+                #             ground.hut1_color = self.blak
+                #             ground.huts_xcor1 = -100
+                # elif(ground.king_xcor == ground.huts_xcor2 + 1 or ground.king_xcor == ground.huts_xcor2 - 1):
+                #     if(ground.king_life >= ground.hut2_life):
+                #         ground.hut2_life = ground.hut2_life - ground.king_damage
+                #         if(ground.hut2_life >= 10 and ground.hut2_life <= 20):
+                #             ground.hut2_color = self.gree
+                #         elif(ground.hut2_life >= 4 and ground.hut2_life <= 10):
+                #             ground.hut2_color = self.yell
+                #         elif(ground.hut2_life >= 0 and ground.hut2_life <= 4):
+                #             ground.hut2_color = self.rd
+                #         else:
+                #             ground.king_xcor = ground.huts_xcor2
+                #             ground.hut2_color = self.blak
+                #             ground.huts_xcor2 = -100
+                # elif(ground.king_xcor == ground.huts_xcor3 + 1 or ground.king_xcor == ground.huts_xcor3 - 1):
+                #     if(ground.king_life >= ground.hut3_life):
+                #         ground.hut3_life = ground.hut3_life - ground.king_damage
+                #         if(ground.hut3_life >= 10 and ground.hut3_life <= 20):
+                #             ground.hut3_color = self.gree
+                #         elif(ground.hut3_life >= 4 and ground.hut3_life <= 10):
+                #             ground.hut3_color = self.yell
+                #         elif(ground.hut3_life >= 0 and ground.hut3_life <= 4):
+                #             ground.hut3_color = self.rd
+                #         else:
+                #             ground.king_xcor = ground.huts_xcor3
+                #             ground.hut3_color = self.blak
+                #             ground.huts_xcor3 = -100
+                # elif(ground.king_xcor == ground.huts_xcor4 + 1 or ground.king_xcor == ground.huts_xcor4 - 1):
+                #     if(ground.king_life >= ground.hut4_life):
+                #         ground.hut4_life = ground.hut4_life - ground.king_damage
+                #         if(ground.hut4_life >= 10 and ground.hut4_life <= 20):
+                #             ground.hut4_color = self.gree
+                #         elif(ground.hut4_life >= 4 and ground.hut4_life <= 10):
+                #             ground.hut4_color = self.yell
+                #         elif(ground.hut4_life >= 0 and ground.hut4_life <= 4):
+                #             ground.hut4_color = self.rd
+                #         else:
+                #             ground.king_xcor = ground.huts_xcor4
+                #             ground.hut4_color = self.blak
+                #             ground.huts_xcor4 = -100
+                # elif(ground.king_xcor == ground.huts_xcor5 + 1 or ground.king_xcor == ground.huts_xcor5 - 1):
+                #     if(ground.king_life >= ground.hut5_life):
+                #         ground.hut5_life = ground.hut5_life - ground.king_damage
+                #         if(ground.hut5_life >= 10 and ground.hut5_life <= 20):
+                #             ground.hut5_color = self.gree
+                #         elif(ground.hut5_life >= 4 and ground.hut5_life <= 10):
+                #             ground.hut5_color = self.yell
+                #         elif(ground.hut5_life >= 0 and ground.hut5_life <= 4):
+                #             ground.hut5_color = self.rd
+                #         else:
+                #             ground.king_xcor = ground.huts_xcor5
+                #             ground.hut5_color = self.blak
+                #             ground.huts_xcor5 = -100
+                # elif(ground.king_xcor == ground.huts_xcor6 + 1 or ground.king_xcor == ground.huts_xcor6 - 1):
+                #     if(ground.king_life >= ground.hut6_life):
+                #         ground.hut6_life = ground.hut6_life - ground.king_damage
+                #         if(ground.hut6_life >= 10 and ground.hut6_life <= 20):
+                #             ground.hut6_color = self.gree
+                #         elif(ground.hut6_life >= 4 and ground.hut6_life <= 10):
+                #             ground.hut6_color = self.yell
+                #         elif(ground.hut6_life >= 0 and ground.hut6_life <= 4):
+                #             ground.hut6_color = self.rd
+                #         else:
+                #             ground.king_xcor = ground.huts_xcor6
+                #             ground.hut6_color = self.blak
+                #             ground.huts_xcor6 = -100
             elif(ground.king_ycor == ground.huts_ycor + 1 or ground.king_ycor == ground.huts_ycor - 1):
                 #############################################################
 
@@ -278,84 +278,84 @@ class king():
                         break
                 
                 #############################################################
-                if(ground.king_xcor == ground.huts_xcor1):
-                    if(ground.king_life >= ground.hut1_life):
-                        ground.hut1_life = ground.hut1_life - ground.king_damage
-                        if(ground.hut1_life >= 10 and ground.hut1_life <= 20):
-                            ground.hut1_color = self.gree
-                        elif(ground.hut1_life >= 4 and ground.hut1_life <= 10):
-                            ground.hut1_color = self.yell
-                        elif(ground.hut1_life >= 0 and ground.hut1_life <= 4):
-                            ground.hut1_color = self.rd
-                        else: 
-                            ground.king_ycor = ground.huts_ycor
-                            ground.hut1_color = self.blak
-                            ground.huts_xcor1 = -100
-                elif(ground.king_xcor == ground.huts_xcor2):
-                    if(ground.king_life >= ground.hut2_life):
-                        ground.hut2_life = ground.hut2_life - ground.king_damage
-                        if(ground.hut2_life >= 10 and ground.hut2_life <= 20):
-                            ground.hut2_color = self.gree
-                        elif(ground.hut2_life >= 4 and ground.hut2_life <= 10):
-                            ground.hut2_color = self.yell
-                        elif(ground.hut2_life >= 0 and ground.hut2_life <= 4):
-                            ground.hut2_color = self.rd
-                        else:
-                            ground.king_ycor = ground.huts_ycor
-                            ground.hut2_color = self.blak
-                            ground.huts_xcor2 = -100
-                elif(ground.king_xcor == ground.huts_xcor3):
-                    if(ground.king_life >= ground.hut3_life):
-                        ground.hut3_life = ground.hut3_life - ground.king_damage
-                        if(ground.hut3_life >= 10 and ground.hut3_life <= 20):
-                            ground.hut3_color = self.gree
-                        elif(ground.hut3_life >= 4 and ground.hut3_life <= 10):
-                            ground.hut3_color = self.yell
-                        elif(ground.hut3_life >= 0 and ground.hut3_life <= 4):
-                            ground.hut3_color = self.rd
-                        else:
-                            ground.king_ycor = ground.huts_ycor
-                            ground.hut3_color = self.blak
-                            ground.huts_xcor3 = -100
-                elif(ground.king_xcor == ground.huts_xcor4):
-                    if(ground.king_life >= ground.hut4_life):
-                        ground.hut4_life = ground.hut4_life - ground.king_damage
-                        if(ground.hut4_life >= 10 and ground.hut4_life <= 20):
-                            ground.hut4_color = self.gree
-                        elif(ground.hut4_life >= 4 and ground.hut4_life <= 10):
-                            ground.hut4_color = self.yell
-                        elif(ground.hut4_life >= 0 and ground.hut4_life <= 4):
-                            ground.hut4_color = self.rd
-                        else:
-                            ground.king_ycor = ground.huts_ycor
-                            ground.hut4_color = self.blak
-                            ground.huts_xcor4 = -100
-                elif(ground.king_xcor == ground.huts_xcor5):
-                    if(ground.king_life >= ground.hut5_life):
-                        ground.hut5_life = ground.hut5_life - ground.king_damage
-                        if(ground.hut5_life >= 10 and ground.hut5_life <= 20):
-                            ground.hut5_color = self.gree
-                        elif(ground.hut5_life >= 4 and ground.hut5_life <= 10):
-                            ground.hut5_color = self.yell
-                        elif(ground.hut5_life >= 0 and ground.hut5_life <= 4):
-                            ground.hut5_color = self.rd
-                        else:
-                            ground.king_ycor = ground.huts_ycor
-                            ground.hut5_color = self.blak
-                            ground.huts_xcor5 = -100
-                elif(ground.king_xcor == ground.huts_xcor6):
-                    if(ground.king_life >= ground.hut6_life):
-                        ground.hut6_life = ground.hut6_life - ground.king_damage
-                        if(ground.hut6_life >= 10 and ground.hut6_life <= 20):
-                            ground.hut6_color = self.gree
-                        elif(ground.hut6_life >= 4 and ground.hut6_life <= 10):
-                            ground.hut6_color = self.yell
-                        elif(ground.hut6_life >= 0 and ground.hut6_life <= 4):
-                            ground.hut6_color = self.rd
-                        else:
-                            ground.king_ycor = ground.huts_ycor
-                            ground.hut6_color = self.blak
-                            ground.huts_xcor6 = -100
+                # if(ground.king_xcor == ground.huts_xcor1):
+                #     if(ground.king_life >= ground.hut1_life):
+                #         ground.hut1_life = ground.hut1_life - ground.king_damage
+                #         if(ground.hut1_life >= 10 and ground.hut1_life <= 20):
+                #             ground.hut1_color = self.gree
+                #         elif(ground.hut1_life >= 4 and ground.hut1_life <= 10):
+                #             ground.hut1_color = self.yell
+                #         elif(ground.hut1_life >= 0 and ground.hut1_life <= 4):
+                #             ground.hut1_color = self.rd
+                #         else: 
+                #             ground.king_ycor = ground.huts_ycor
+                #             ground.hut1_color = self.blak
+                #             ground.huts_xcor1 = -100
+                # elif(ground.king_xcor == ground.huts_xcor2):
+                #     if(ground.king_life >= ground.hut2_life):
+                #         ground.hut2_life = ground.hut2_life - ground.king_damage
+                #         if(ground.hut2_life >= 10 and ground.hut2_life <= 20):
+                #             ground.hut2_color = self.gree
+                #         elif(ground.hut2_life >= 4 and ground.hut2_life <= 10):
+                #             ground.hut2_color = self.yell
+                #         elif(ground.hut2_life >= 0 and ground.hut2_life <= 4):
+                #             ground.hut2_color = self.rd
+                #         else:
+                #             ground.king_ycor = ground.huts_ycor
+                #             ground.hut2_color = self.blak
+                #             ground.huts_xcor2 = -100
+                # elif(ground.king_xcor == ground.huts_xcor3):
+                #     if(ground.king_life >= ground.hut3_life):
+                #         ground.hut3_life = ground.hut3_life - ground.king_damage
+                #         if(ground.hut3_life >= 10 and ground.hut3_life <= 20):
+                #             ground.hut3_color = self.gree
+                #         elif(ground.hut3_life >= 4 and ground.hut3_life <= 10):
+                #             ground.hut3_color = self.yell
+                #         elif(ground.hut3_life >= 0 and ground.hut3_life <= 4):
+                #             ground.hut3_color = self.rd
+                #         else:
+                #             ground.king_ycor = ground.huts_ycor
+                #             ground.hut3_color = self.blak
+                #             ground.huts_xcor3 = -100
+                # elif(ground.king_xcor == ground.huts_xcor4):
+                #     if(ground.king_life >= ground.hut4_life):
+                #         ground.hut4_life = ground.hut4_life - ground.king_damage
+                #         if(ground.hut4_life >= 10 and ground.hut4_life <= 20):
+                #             ground.hut4_color = self.gree
+                #         elif(ground.hut4_life >= 4 and ground.hut4_life <= 10):
+                #             ground.hut4_color = self.yell
+                #         elif(ground.hut4_life >= 0 and ground.hut4_life <= 4):
+                #             ground.hut4_color = self.rd
+                #         else:
+                #             ground.king_ycor = ground.huts_ycor
+                #             ground.hut4_color = self.blak
+                #             ground.huts_xcor4 = -100
+                # elif(ground.king_xcor == ground.huts_xcor5):
+                #     if(ground.king_life >= ground.hut5_life):
+                #         ground.hut5_life = ground.hut5_life - ground.king_damage
+                #         if(ground.hut5_life >= 10 and ground.hut5_life <= 20):
+                #             ground.hut5_color = self.gree
+                #         elif(ground.hut5_life >= 4 and ground.hut5_life <= 10):
+                #             ground.hut5_color = self.yell
+                #         elif(ground.hut5_life >= 0 and ground.hut5_life <= 4):
+                #             ground.hut5_color = self.rd
+                #         else:
+                #             ground.king_ycor = ground.huts_ycor
+                #             ground.hut5_color = self.blak
+                #             ground.huts_xcor5 = -100
+                # elif(ground.king_xcor == ground.huts_xcor6):
+                #     if(ground.king_life >= ground.hut6_life):
+                #         ground.hut6_life = ground.hut6_life - ground.king_damage
+                #         if(ground.hut6_life >= 10 and ground.hut6_life <= 20):
+                #             ground.hut6_color = self.gree
+                #         elif(ground.hut6_life >= 4 and ground.hut6_life <= 10):
+                #             ground.hut6_color = self.yell
+                #         elif(ground.hut6_life >= 0 and ground.hut6_life <= 4):
+                #             ground.hut6_color = self.rd
+                #         else:
+                #             ground.king_ycor = ground.huts_ycor
+                #             ground.hut6_color = self.blak
+                #             ground.huts_xcor6 = -100
         
         
 

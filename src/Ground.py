@@ -21,32 +21,32 @@ class Village:
         self.ongoing = 1
 
         # canons
-        self.cx1 = 30
-        self.cy1 = 50
-        self.cx2 = 30
-        self.cy2 = 180
-        self.cdamage = 1
-        self.crange = 3
+        # self.cx1 = 30
+        # self.cy1 = 50
+        # self.cx2 = 30
+        # self.cy2 = 180
+        # self.cdamage = 1
+        # self.crange = 3
         self.kingh = 20
 
         # spawning need to be done
 
-        self.huts_xcor1 = 4
-        self.huts_xcor2 = 8
-        self.huts_xcor3 = 12
-        self.huts_xcor4 = 16
-        self.huts_xcor5 = 20
-        self.huts_xcor6 = 24
+        # self.huts_xcor1 = 4
+        # self.huts_xcor2 = 8
+        # self.huts_xcor3 = 12
+        # self.huts_xcor4 = 16
+        # self.huts_xcor5 = 20
+        # self.huts_xcor6 = 24
 
-        self.huts_ycor = 120
+        # self.huts_ycor = 120
 
-        self.hut_maxlife = 20
-        self.hut1_life = 20
-        self.hut2_life = 20
-        self.hut3_life = 20
-        self.hut4_life = 20
-        self.hut5_life = 20
-        self.hut6_life = 20
+        # self.hut_maxlife = 20
+        # self.hut1_life = 20
+        # self.hut2_life = 20
+        # self.hut3_life = 20
+        # self.hut4_life = 20
+        # self.hut5_life = 20
+        # self.hut6_life = 20
 
         self.background = Back.BLACK + " " + Style.RESET_ALL
         self.huts = Back.GREEN + " " + Style.RESET_ALL
@@ -56,12 +56,12 @@ class Village:
         self.spawning = Back.RED + " " + Style.RESET_ALL
         self.townwall = Back.WHITE + " " + Style.RESET_ALL
 
-        self.hut1_color = self.huts
-        self.hut2_color = self.huts
-        self.hut3_color = self.huts
-        self.hut4_color = self.huts
-        self.hut5_color = self.huts
-        self.hut6_color = self.huts
+        # self.hut1_color = self.huts
+        # self.hut2_color = self.huts
+        # self.hut3_color = self.huts
+        # self.hut4_color = self.huts
+        # self.hut5_color = self.huts
+        # self.hut6_color = self.huts
 
         #############################################################
 
@@ -121,8 +121,8 @@ class Village:
                 ] = self.townhall
 
 
-        self.ground[self.cx1][self.cy1] = self.cannon
-        self.ground[self.cx2][self.cy2] = self.cannon
+        # self.ground[self.cx1][self.cy1] = self.cannon
+        # self.ground[self.cx2][self.cy2] = self.cannon
 
 
         #############################################################
@@ -132,38 +132,40 @@ class Village:
 
         #############################################################
 
-        for i in range(0, 1):
-            for j in range(0, 1):
-                if self.huts_xcor1 != -100:
-                    self.ground[self.huts_xcor1 + i][
-                        self.huts_ycor + j
-                    ] = self.hut1_color
-                if self.huts_xcor2 != -100:
-                    self.ground[self.huts_xcor2 + i][
-                        self.huts_ycor + j
-                    ] = self.hut2_color
-                if self.huts_xcor3 != -100:
-                    self.ground[self.huts_xcor3 + i][
-                        self.huts_ycor + j
-                    ] = self.hut3_color
-                if self.huts_xcor4 != -100:
-                    self.ground[self.huts_xcor4 + i][
-                        self.huts_ycor + j
-                    ] = self.hut4_color
-                if self.huts_xcor5 != -100:
-                    self.ground[self.huts_xcor5 + i][
-                        self.huts_ycor + j
-                    ] = self.hut5_color
-                if self.huts_xcor6 != -100:
-                    self.ground[self.huts_xcor6 + i][
-                        self.huts_ycor + j
-                    ] = self.hut6_color
+        # for i in range(0, 1):
+        #     for j in range(0, 1):
+        #         if self.huts_xcor1 != -100:
+        #             self.ground[self.huts_xcor1 + i]
+        #                 self.huts_ycor + j
+        #             ] = self.hut1_color
+        #         if self.huts_xcor2 != -100:
+        #             self.ground[self.huts_xcor2 + i][
+        #                 self.huts_ycor + j
+        #             ] = self.hut2_color
+        #         if self.huts_xcor3 != -100:
+        #             self.ground[self.huts_xcor3 + i][
+        #                 self.huts_ycor + j
+        #             ] = self.hut3_color
+        #         if self.huts_xcor4 != -100:
+        #             self.ground[self.huts_xcor4 + i][
+        #                 self.huts_ycor + j
+        #             ] = self.hut4_color
+        #         if self.huts_xcor5 != -100:
+        #             self.ground[self.huts_xcor5 + i][
+        #                 self.huts_ycor + j
+        #             ] = self.hut5_color
+        #         if self.huts_xcor6 != -100:
+        #             self.ground[self.huts_xcor6 + i][
+        #                 self.huts_ycor + j
+        #             ] = self.hut6_color
         
         #############################################################
 
         for h in self.huts_arr:
-            if(h.xcor != 100):
+            if(h.xcor != -100):
                 self.ground[h.xcor][h.ycor] = h.color
+                print(h.xcor,end=" ")
+                print(h.ycor)
 
         #############################################################
 
@@ -210,36 +212,36 @@ class Village:
         #         if(self.ground[self.townhall_xcor + i][self.townhall_ycor + j] !=self.background):
         #             count=0
 
-        if self.huts_xcor1 != -100:
-            count = 0
-        if self.huts_xcor1 != -100:
-            count = 0
-        if self.huts_xcor3 != -100:
-            count = 0
-        if self.huts_xcor4 != -100:
-            count = 0
-        if self.huts_xcor5 != -100:
-            count = 0
-        if self.huts_xcor6 != -100:
-            count = 0
+        # if self.huts_xcor1 != -100:
+        #     count = 0
+        # if self.huts_xcor1 != -100:
+        #     count = 0
+        # if self.huts_xcor3 != -100:
+        #     count = 0
+        # if self.huts_xcor4 != -100:
+        #     count = 0
+        # if self.huts_xcor5 != -100:
+        #     count = 0
+        # if self.huts_xcor6 != -100:
+        #     count = 0
 
         #############################################################
 
         for h in self.huts_arr:
-            if(h.xcor != 100):
+            if(h.xcor != -100):
                 count = 0
 
         #############################################################
 
-        if (self.king_xcor - self.cx1) ** 2 + (
-            self.king_ycor - self.cy1
-        ) ** 2 < self.crange**2:
-            self.kingh -= self.cdamage
+        # if (self.king_xcor - self.cx1) ** 2 + (
+        #     self.king_ycor - self.cy1
+        # ) ** 2 < self.crange**2:
+        #     self.kingh -= self.cdamage
 
-        if (self.king_xcor - self.cx2) ** 2 + (
-            self.king_ycor - self.cy2
-        ) ** 2 < self.crange**2:
-            self.kingh -= self.cdamage
+        # if (self.king_xcor - self.cx2) ** 2 + (
+        #     self.king_ycor - self.cy2
+        # ) ** 2 < self.crange**2:
+        #     self.kingh -= self.cdamage
         
         #############################################################
 

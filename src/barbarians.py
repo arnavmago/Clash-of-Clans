@@ -47,84 +47,84 @@ class Barbarians():
                             break
                     
                     #############################################################
-                    if(ground.huts_xcor1 != -100 and self.bar1_x == ground.huts_xcor1):
-                        if(ground.hut1_color == self.gree):
-                            self.bar1_x -= 1
-                            ground.hut1_color = self.yell
-                            continue
-                        elif(ground.hut1_color == self.yell):
-                            self.bar1_x -= 1
-                            ground.hut1_color = self.rd
-                            continue
-                        elif(ground.hut1_color == self.rd):
-                            self.bar1_x -= 1
-                            ground.hut1_color = self.blak
-                            ground.huts_xcor1 = -100
-                    elif(ground.huts_xcor2 != -100 and self.bar1_x == ground.huts_xcor2):
-                        if(ground.hut2_color == self.gree):
-                            self.bar1_x -= 1
-                            ground.hut2_color = self.yell
-                            continue
-                        elif(ground.hut2_color == self.yell):
-                            self.bar1_x -= 1
-                            ground.hut2_color = self.rd
-                            continue
-                        elif(ground.hut2_color == self.rd):
-                            self.bar1_x -= 1
-                            ground.hut2_color = self.blak
-                            ground.huts_xcor2 = -100
-                    elif(ground.huts_xcor3 != -100 and self.bar1_x == ground.huts_xcor3):
-                        if(ground.hut3_color == self.gree):
-                            self.bar1_x -= 1
-                            ground.hut3_color = self.yell
-                            continue
-                        elif(ground.hut3_color == self.yell):
-                            self.bar1_x -= 1
-                            ground.hut3_color = self.rd
-                            continue
-                        elif(ground.hut3_color == self.rd):
-                            self.bar1_x -= 1
-                            ground.hut3_color = self.blak
-                            ground.huts_xcor3 = -100
-                    elif(ground.huts_xcor4 != -100 and self.bar1_x == ground.huts_xcor4):
-                        if(ground.hut4_color == self.gree):
-                            self.bar1_x -= 1
-                            ground.hut4_color = self.yell
-                            continue
-                        elif(ground.hut4_color == self.yell):
-                            self.bar1_x -= 1
-                            ground.hut4_color = self.rd
-                            continue
-                        elif(ground.hut4_color == self.rd):
-                            self.bar1_x -= 1
-                            ground.hut4_color = self.blak
-                            ground.huts_xcor4 = -100
-                    elif(ground.huts_xcor5 != -100 and self.bar1_x == ground.huts_xcor5):
-                        if(ground.hut5_color == self.gree):
-                            self.bar1_x -= 1
-                            ground.hut5_color = self.yell
-                            continue
-                        elif(ground.hut5_color == self.yell):
-                            self.bar1_x -= 1
-                            ground.hut5_color = self.rd
-                            continue
-                        elif(ground.hut5_color == self.rd):
-                            self.bar1_x -= 1
-                            ground.hut5_color = self.blak
-                            ground.huts_xcor5 = -100
-                    elif(ground.huts_xcor6 != -100 and self.bar1_x == ground.huts_xcor6):
-                        if(ground.hut6_color == self.gree):
-                            self.bar1_x -= 1
-                            ground.hut6_color = self.yell
-                            continue
-                        elif(ground.hut6_color == self.yell):
-                            self.bar1_x -= 1
-                            ground.hut6_color = self.rd
-                            continue
-                        elif(ground.hut6_color == self.rd):
-                            self.bar1_x -= 1
-                            ground.hut6_color = self.blak
-                            ground.huts_xcor6 = -100
+                    # if(ground.huts_xcor1 != -100 and self.bar1_x == ground.huts_xcor1):
+                    #     if(ground.hut1_color == self.gree):
+                    #         self.bar1_x -= 1
+                    #         ground.hut1_color = self.yell
+                    #         continue
+                    #     elif(ground.hut1_color == self.yell):
+                    #         self.bar1_x -= 1
+                    #         ground.hut1_color = self.rd
+                    #         continue
+                    #     elif(ground.hut1_color == self.rd):
+                    #         self.bar1_x -= 1
+                    #         ground.hut1_color = self.blak
+                    #         ground.huts_xcor1 = -100
+                    # elif(ground.huts_xcor2 != -100 and self.bar1_x == ground.huts_xcor2):
+                    #     if(ground.hut2_color == self.gree):
+                    #         self.bar1_x -= 1
+                    #         ground.hut2_color = self.yell
+                    #         continue
+                    #     elif(ground.hut2_color == self.yell):
+                    #         self.bar1_x -= 1
+                    #         ground.hut2_color = self.rd
+                    #         continue
+                    #     elif(ground.hut2_color == self.rd):
+                    #         self.bar1_x -= 1
+                    #         ground.hut2_color = self.blak
+                    #         ground.huts_xcor2 = -100
+                    # elif(ground.huts_xcor3 != -100 and self.bar1_x == ground.huts_xcor3):
+                    #     if(ground.hut3_color == self.gree):
+                    #         self.bar1_x -= 1
+                    #         ground.hut3_color = self.yell
+                    #         continue
+                    #     elif(ground.hut3_color == self.yell):
+                    #         self.bar1_x -= 1
+                    #         ground.hut3_color = self.rd
+                    #         continue
+                    #     elif(ground.hut3_color == self.rd):
+                    #         self.bar1_x -= 1
+                    #         ground.hut3_color = self.blak
+                    #         ground.huts_xcor3 = -100
+                    # elif(ground.huts_xcor4 != -100 and self.bar1_x == ground.huts_xcor4):
+                    #     if(ground.hut4_color == self.gree):
+                    #         self.bar1_x -= 1
+                    #         ground.hut4_color = self.yell
+                    #         continue
+                    #     elif(ground.hut4_color == self.yell):
+                    #         self.bar1_x -= 1
+                    #         ground.hut4_color = self.rd
+                    #         continue
+                    #     elif(ground.hut4_color == self.rd):
+                    #         self.bar1_x -= 1
+                    #         ground.hut4_color = self.blak
+                    #         ground.huts_xcor4 = -100
+                    # elif(ground.huts_xcor5 != -100 and self.bar1_x == ground.huts_xcor5):
+                    #     if(ground.hut5_color == self.gree):
+                    #         self.bar1_x -= 1
+                    #         ground.hut5_color = self.yell
+                    #         continue
+                    #     elif(ground.hut5_color == self.yell):
+                    #         self.bar1_x -= 1
+                    #         ground.hut5_color = self.rd
+                    #         continue
+                    #     elif(ground.hut5_color == self.rd):
+                    #         self.bar1_x -= 1
+                    #         ground.hut5_color = self.blak
+                    #         ground.huts_xcor5 = -100
+                    # elif(ground.huts_xcor6 != -100 and self.bar1_x == ground.huts_xcor6):
+                    #     if(ground.hut6_color == self.gree):
+                    #         self.bar1_x -= 1
+                    #         ground.hut6_color = self.yell
+                    #         continue
+                    #     elif(ground.hut6_color == self.yell):
+                    #         self.bar1_x -= 1
+                    #         ground.hut6_color = self.rd
+                    #         continue
+                    #     elif(ground.hut6_color == self.rd):
+                    #         self.bar1_x -= 1
+                    #         ground.hut6_color = self.blak
+                    #         ground.huts_xcor6 = -100
 
                 if(self.bar1_x >= 24):
                     self.check = 1
@@ -140,9 +140,9 @@ class Barbarians():
                         if(self.bar1_x==ground.townhall_xcor+4):
                             if(self.bar1_y in range(ground.townhall_ycor,ground.townhall_ycor+3)):
                                 if(ground.townhall==self.gree):
-                                ground.townhall=self.yell
-                                self.bar1_x = self.bar1_x + 1
-                                continue
+                                    ground.townhall=self.yell
+                                    self.bar1_x = self.bar1_x + 1
+                                    continue
                               
                             elif(ground.townhall==self.yell):
                                 ground.townhall=self.rd
